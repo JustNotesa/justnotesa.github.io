@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Willkommen auf meiner Notes Seite!</title>
   <style>
     body {
@@ -15,7 +15,7 @@
       justify-content: center;
       align-items: center;
     }
-    
+
     .container {
       text-align: center;
       background-color: white;
@@ -39,12 +39,11 @@
     .iframe-wrapper {
       width: 640px;
       max-width: 100%;
-      margin: 0 auto;
+      margin: 0 auto 10px;
       border-radius: 12px;
       overflow: hidden;
       box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.3s ease;
-      margin-bottom: 10px;
     }
 
     .iframe-wrapper:hover {
@@ -57,6 +56,22 @@
       height: 190px;
       border: none;
     }
+
+    .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100vw;
+      background: linear-gradient(90deg, #ff9800 0%, #ffc107 100%);
+      color: #222;
+      text-align: center;
+      padding: 12px 0;
+      font-weight: bold;
+      font-size: 1.1em;
+      letter-spacing: 1px;
+      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
+      z-index: 1000;
+    }
   </style>
 </head>
 <body>
@@ -64,39 +79,22 @@
     <h1>Willkommen auf meiner Notes Seite!</h1>
     <p>Dies ist eine einfache Seite, die Praktisches Zeug hostet.</p>
 
-    
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/290112" scrolling="no" frameborder="0"></iframe>
+      <iframe src="https://www.printables.com/embed/290112" scrolling="no"></iframe>
     </div>
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/956767" scrolling="no" frameborder="0"></iframe>
+      <iframe src="https://www.printables.com/embed/956767" scrolling="no"></iframe>
     </div>
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/509410" scrolling="no" frameborder="0"></iframe>
+      <iframe src="https://www.printables.com/embed/509410" scrolling="no"></iframe>
     </div>
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/578478" scrolling="no" frameborder="0"></iframe>
+      <iframe src="https://www.printables.com/embed/578478" scrolling="no"></iframe>
     </div>
-    
-      </div>
-  <div style="
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    background: linear-gradient(90deg, #ff9800 0%, #ffc107 100%);
-    color: #222;
-    text-align: center;
-    padding: 12px 0;
-    font-weight: bold;
-    font-size: 1.1em;
-    letter-spacing: 1px;
-    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
-    z-index: 1000;
-  ">
-    🚧 Work in Progress 🚧
   </div>
-    
+
+  <div class="footer">
+    🚧 Work in Progress 🚧
   </div>
 </body>
 </html>
