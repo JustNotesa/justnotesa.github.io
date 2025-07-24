@@ -1,108 +1,102 @@
 <!DOCTYPE html>
 <html lang="de">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Willkommen auf meiner Notes Seite!</title>
   <style>
-    * {
-      box-sizing: border-box;
-    }
-
     body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-family: Arial, sans-serif;
       background-color: #f4f4f9;
       margin: 0;
-      padding: 40px 20px 80px; /* Platz für Footer */
+      padding: 40px 20px;
       min-height: 100vh;
       display: flex;
       justify-content: center;
-      align-items: flex-start;
+      align-items: center;
     }
-
+    
     .container {
+      text-align: center;
       background-color: white;
       padding: 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      max-width: 800px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+      max-width: 700px;
       width: 100%;
-      text-align: center;
+      box-sizing: border-box;
     }
 
     h1 {
-      color: #222;
-      margin-top: 0;
+      color: #333;
     }
 
     p {
-      color: #555;
-      margin-bottom: 2rem;
+      color: #666;
+      margin-bottom: 30px;
     }
 
     .iframe-wrapper {
-      margin-bottom: 20px;
+      width: 640px;
+      max-width: 100%;
+      margin: 0 auto;
       border-radius: 12px;
       overflow: hidden;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
       transition: box-shadow 0.3s ease;
+      margin-bottom: 10px;
     }
 
     .iframe-wrapper:hover {
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+      box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
     }
 
     iframe {
+      display: block;
       width: 100%;
       height: 190px;
       border: none;
-      display: block;
-    }
-
-    footer {
-      position: fixed;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      background: linear-gradient(90deg, #ff9800 0%, #ffc107 100%);
-      color: #222;
-      text-align: center;
-      padding: 12px 0;
-      font-weight: bold;
-      font-size: 1.1em;
-      letter-spacing: 1px;
-      box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.08);
-      z-index: 1000;
-    }
-
-    @media (max-width: 600px) {
-      iframe {
-        height: 160px;
-      }
     }
   </style>
 </head>
 <body>
-  <main class="container">
+  <div class="container">
     <h1>Willkommen auf meiner Notes Seite!</h1>
-    <p>Dies ist eine einfache Seite, die praktisches Zeug hostet.</p>
+    <p>Dies ist eine einfache Seite, die Praktisches Zeug hostet.</p>
 
+    
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/290112" scrolling="no" title="3D Modell 1"></iframe>
+      <iframe src="https://www.printables.com/embed/290112" scrolling="no" frameborder="0"></iframe>
     </div>
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/956767" scrolling="no" title="3D Modell 2"></iframe>
+      <iframe src="https://www.printables.com/embed/956767" scrolling="no" frameborder="0"></iframe>
     </div>
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/509410" scrolling="no" title="3D Modell 3"></iframe>
+      <iframe src="https://www.printables.com/embed/509410" scrolling="no" frameborder="0"></iframe>
     </div>
     <div class="iframe-wrapper">
-      <iframe src="https://www.printables.com/embed/578478" scrolling="no" title="3D Modell 4"></iframe>
+      <iframe src="https://www.printables.com/embed/578478" scrolling="no" frameborder="0"></iframe>
     </div>
-  </main>
-
-  <footer>
+    
+      </div>
+  <div style="
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    background: linear-gradient(90deg, #ff9800 0%, #ffc107 100%);
+    color: #222;
+    text-align: center;
+    padding: 12px 0;
+    font-weight: bold;
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    box-shadow: 0 -2px 8px rgba(0,0,0,0.08);
+    z-index: 1000;
+  ">
     🚧 Work in Progress 🚧
-  </footer>
+  </div>
+    
+  </div>
 </body>
 </html>
